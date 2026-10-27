@@ -1,0 +1,45 @@
+========================================================
+  KARIM MARKET (Cadeau Karim) - UPLOAD GITHUB PAR LOTS
+  633 fichiers repartis en 7 lots de <=95 fichiers.
+  Chaque lot reproduit EXACTEMENT l arborescence du projet.
+========================================================
+
+ETAPE 1 - Creer le depot vide sur GitHub
+  - github.com  >  New repository
+  - Nom : karim-market (ou ton choix)
+  - IMPORTANT : ne coche NI "Add a README", NI .gitignore, NI licence.
+    Le depot doit etreentierement VIDE. Clique "Create repository".
+
+ETAPE 2 - Uploader les lots DANS L ORDRE (01 puis 02 ... puis 07)
+  Pour chaque lot NN :
+   1. Sur GitHub, dans ton depot, clique "Add file" > "Upload files".
+   2. Ouvre le dossier NN (ex: 01) sur ton Bureau.
+   3. Selectionne TOUT son contenu (Ctrl+A).
+   4. Glisse-depose ces elements dans la zone d upload de GitHub.
+      -> GitHub conserve automatiquement les chemins
+         (backend/..., frontend/..., scripts/..., Dockerfile, etc.).
+   5. Attends la fin (petit voyant vert), puis saisis un message
+      de commit (ex: "lot NN") et clique "Commit changes".
+   6. Repete pour le lot suivant. Les dossiers existants sont
+      simplement completes, rien n est ecrase.
+
+  Ordre des lots :
+   01 -> fichiers racine (Dockerfile, .dockerignore...) + debut backend
+   02 -> fin backend + debut frontend
+   03, 04, 05 -> images du catalogue (frontend/public/images)
+   06 -> fin frontend + scripts (Maven)
+   07 -> fin scripts + fichiers de test racine
+
+ETAPE 3 - Verifier
+  A la fin, le depot doit contenir a la racine :
+   Dockerfile, docker-entrypoint.sh, .dockerignore, backend/, frontend/, scripts/
+  Total attendu : 633 fichiers.
+
+ASTUCE : si GitHub refuse un lot (limite 100 fichiers), le lot est deja
+  prevu a 95 fichiers max, donc cela ne doit pas arriver. Ne glisse
+  JAMAIS deux lots en meme temps.
+
+NOTE : ce dossier karim-market-GITHUB-UPLOAD est une COPIE temporaire
+  destinee a l upload. Tu peux le supprimer une fois le depot en ligne.
+  Le projet d origine reste dans karim-market, et la sauvegarde ZIP est
+  sur le Bureau (karim-market-SAUVEGARDE-INITIALE-2026-09-27.zip).

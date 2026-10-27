@@ -1,0 +1,12 @@
+# Contexte Docker : exclure tout ce qui est regenere ou inutile
+.git
+.bytecoder
+**/node_modules
+**/target
+frontend/dist
+scripts/logs
+scripts/.tools
+backend/uploads
+**/*.log
+**/*.zip
+**/*.class
